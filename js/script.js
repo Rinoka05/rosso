@@ -11,16 +11,19 @@ $(document).ready(function(){
 		infinite:true,
 		initialSlide: 1,
 		draggable: false,
+		swipe:true,
+		touchMove: false,
 		touchThreshold: 10,
 		waitForAnimate: true,
 		variableWidth: false,
-		//responsive: [{
-		//	breakpoint: 1200,
-		//	settings: {
-		//		slidesToShow: 3
-		//	}		
-		//}]
+		responsive: [{
+			breakpoint: 1366,
+			settings: {
+				arrows: false,
+			}
+		}]
 	});
+	//console.log("work");
 	
 
 	$('.categories__item').mouseenter(function (e){

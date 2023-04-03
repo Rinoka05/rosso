@@ -802,8 +802,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .categories__grid {
     -ms-grid-rows: minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(60px, 70px);
-    -ms-grid-columns: 100%;
-        grid-template: minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(60px, 70px)/100%;
+    -ms-grid-columns: 1fr;
+        grid-template: minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(100px, 210px) minmax(60px, 70px)/1fr;
   }
   .categories__title {
     padding: 82px 0 0 64px;
@@ -817,16 +817,16 @@ h1, h2, h3, h4, h5, h6 {
   .categories__image {
     position: absolute;
     top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-20%, -50%);
-            transform: translate(-20%, -50%);
+    right: 0;
+    width: 100px;
+    -webkit-transform: translate(-150%, -50%);
+            transform: translate(-150%, -50%);
     position: relative;
-    padding: 0 0 20% 0;
+    margin: 0 50%;
   }
   .categories__image img {
-    text-align: right;
     position: absolute;
-    width: 100%;
+    width: 100px;
     height: 100%;
     top: 0;
     right: 0;
@@ -1054,16 +1054,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .catalogue__grid {
     -ms-grid-rows: 640px;
-    -ms-grid-columns: 33.333% 66.666% 120px;
-        grid-template: 640px/33.333% 66.666% 120px;
+    -ms-grid-columns: 33.333% 66.666%;
+        grid-template: 640px/33.333% 66.666%;
   }
   .catalogue__slider {
     overflow: hidden;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 415px 86px;
-    -ms-grid-columns: 1fr 60px 60px;
-        grid-template: 415px 86px/1fr 60px 60px;
+    -ms-grid-columns: 1fr;
+        grid-template: 415px 86px/1fr;
     border: 1px solid #7A7A7A;
   }
   .slider__item {
@@ -1100,11 +1100,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 115px;
     font-size: 14px;
     line-height: 130%;
-    padding: 50px 0 0 0;
+    padding: 30px 0 0 0;
   }
   .catalogue__title p {
     max-width: 480px;
-    margin: 0 0 0 58px;
+    margin: 0 58px 0 58px;
   }
 }
 .partnerts__grid {
